@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bar</title>
+    <link rel="icon" type="image/svg+xml" href="Media/Images/cocktail.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <dialog id="info">
+        <p>Informacion</p>
+        <form method="dialog"><input type="submit" value="Close" /></form>
+      </dialog>
+      <dialog id="instructions">
+        <p>Instrucciones</p>
+        <form method="dialog"><input type="submit" value="Close" /></form>
+      </dialog>
+    </div>
+    
+
+    <div class="shaker-container">
+      <button id="randomBtn">Random drink</button>
+      <img
+        id="mainImage"
+        src=""
+        class="hidden shaker cocktail-container"
+        alt="Cocktail shaker"
+      />
+      <div id="buttonHide" class="hidden">
+        <div class="button-container">
+          <button id="infoBtn">About the cocktail</button>
+          <button id="instructionsBtn">Instructions</button>
+        </div>
+      </div>
+    </div>
+    <div class="button-container">
+      <div class="container">
+        <button id="searchNameBtn">Buscar</button>
+        <input id="Name" type="text" placeholder="Search by name">
+      </div>
+      <div class="container">
+      <button id="searchIngredientBtn">Buscar</button>
+      <input id="Ingredient" type="text" placeholder="Search by ingredient used ">
+    </div>
+    </div>
+    <script src="Scripts/Controller.js"></script>
+    <script src="Scripts/API.js"></script>
+    <script src="Scripts/DialogBuilder.js"></script>
+  </body>
+</html>
